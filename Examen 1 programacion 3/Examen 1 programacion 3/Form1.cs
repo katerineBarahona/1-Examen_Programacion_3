@@ -34,18 +34,18 @@ namespace Examen_1_programacion_3
             CantidadDepositadaTextBox.Text = "L. " + (cantidad).ToString();
             InteresMensualTextBox.Text = "L. " + (tasa).ToString();
 
-            MesesListBox.Items.Add("Intereses ganados en el mes de Enero          L. " + tasa);
-            MesesListBox.Items.Add("Intereses ganados en el mes de Febrero        L. " + (tasa + tasa));
-            MesesListBox.Items.Add("Intereses ganados en el mes de Marzo          L. " + (tasa + tasa + tasa));
-            MesesListBox.Items.Add("Intereses ganados en el mes de Abril          L. " + (tasa + tasa + tasa + tasa));
-            MesesListBox.Items.Add("Intereses ganados en el mes de Mayo           L. " + (tasa + tasa + tasa + tasa + tasa));
-            MesesListBox.Items.Add("Intereses ganados en el mes de Junio          L. " + (tasa + tasa + tasa + tasa + tasa + tasa));
-            MesesListBox.Items.Add("Intereses ganados en el mes de Julio:         L. " + (tasa + tasa + tasa + tasa + tasa + tasa + tasa));
-            MesesListBox.Items.Add("Intereses ganados en el mes de Agosto         L. " + (tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa));
-            MesesListBox.Items.Add("Intereses ganados en el mes de Septiembre     L. " + (tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa));
-            MesesListBox.Items.Add("Intereses ganados en el mes de Octubre        L. " + (tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa));
-            MesesListBox.Items.Add("Intereses ganados en el mes de Noviembre      L. " + (tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa));
-            MesesListBox.Items.Add("Intereses ganados en el mes de Diciembre      L. " + (tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa));
+            Meses.Items.Add("Intereses ganados en el mes de Enero          L. " + tasa);
+            Meses.Items.Add("Intereses ganados en el mes de Febrero        L. " + (tasa + tasa));
+            Meses.Items.Add("Intereses ganados en el mes de Marzo          L. " + (tasa + tasa + tasa));
+            Meses.Items.Add("Intereses ganados en el mes de Abril          L. " + (tasa + tasa + tasa + tasa));
+            Meses.Items.Add("Intereses ganados en el mes de Mayo           L. " + (tasa + tasa + tasa + tasa + tasa));
+            Meses.Items.Add("Intereses ganados en el mes de Junio          L. " + (tasa + tasa + tasa + tasa + tasa + tasa));
+            Meses.Items.Add("Intereses ganados en el mes de Julio:         L. " + (tasa + tasa + tasa + tasa + tasa + tasa + tasa));
+            Meses.Items.Add("Intereses ganados en el mes de Agosto         L. " + (tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa));
+            Meses.Items.Add("Intereses ganados en el mes de Septiembre     L. " + (tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa));
+            Meses.Items.Add("Intereses ganados en el mes de Octubre        L. " + (tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa));
+            Meses.Items.Add("Intereses ganados en el mes de Noviembre      L. " + (tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa));
+            Meses.Items.Add("Intereses ganados en el mes de Diciembre      L. " + (tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa + tasa));
 
             return intereses;
         }
@@ -53,6 +53,11 @@ namespace Examen_1_programacion_3
         {
 
             Intereses(total, intereses, cantidad, tasa);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

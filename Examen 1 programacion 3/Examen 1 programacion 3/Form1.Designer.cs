@@ -35,7 +35,7 @@
             this.InteresesMensualButton = new System.Windows.Forms.Button();
             this.CantidadDepositadaTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.MesesListBox = new System.Windows.Forms.ListBox();
+            this.Meses = new System.Windows.Forms.ListBox();
             this.InteresMensualTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,6 +45,7 @@
             // 
             // Txt_InteresesGanadosAño
             // 
+            this.Txt_InteresesGanadosAño.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Txt_InteresesGanadosAño.Location = new System.Drawing.Point(570, 617);
             this.Txt_InteresesGanadosAño.Margin = new System.Windows.Forms.Padding(4);
             this.Txt_InteresesGanadosAño.Name = "Txt_InteresesGanadosAño";
@@ -81,13 +82,15 @@
             // 
             // InteresesMensualButton
             // 
-            this.InteresesMensualButton.Location = new System.Drawing.Point(647, 251);
+            this.InteresesMensualButton.BackColor = System.Drawing.Color.Lime;
+            this.InteresesMensualButton.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InteresesMensualButton.Location = new System.Drawing.Point(678, 227);
             this.InteresesMensualButton.Margin = new System.Windows.Forms.Padding(4);
             this.InteresesMensualButton.Name = "InteresesMensualButton";
-            this.InteresesMensualButton.Size = new System.Drawing.Size(133, 46);
+            this.InteresesMensualButton.Size = new System.Drawing.Size(125, 63);
             this.InteresesMensualButton.TabIndex = 22;
             this.InteresesMensualButton.Text = "Mostrar Intereses por mes";
-            this.InteresesMensualButton.UseVisualStyleBackColor = true;
+            this.InteresesMensualButton.UseVisualStyleBackColor = false;
             this.InteresesMensualButton.Click += new System.EventHandler(this.InteresesMensualButton_Click);
             // 
             // CantidadDepositadaTextBox
@@ -110,15 +113,15 @@
             this.label4.TabIndex = 20;
             this.label4.Text = "Cantidad Depositada:";
             // 
-            // MesesListBox
+            // Meses
             // 
-            this.MesesListBox.FormattingEnabled = true;
-            this.MesesListBox.ItemHeight = 16;
-            this.MesesListBox.Location = new System.Drawing.Point(226, 304);
-            this.MesesListBox.Margin = new System.Windows.Forms.Padding(4);
-            this.MesesListBox.Name = "MesesListBox";
-            this.MesesListBox.Size = new System.Drawing.Size(447, 260);
-            this.MesesListBox.TabIndex = 19;
+            this.Meses.FormattingEnabled = true;
+            this.Meses.ItemHeight = 16;
+            this.Meses.Location = new System.Drawing.Point(226, 304);
+            this.Meses.Margin = new System.Windows.Forms.Padding(4);
+            this.Meses.Name = "Meses";
+            this.Meses.Size = new System.Drawing.Size(447, 260);
+            this.Meses.TabIndex = 19;
             // 
             // InteresMensualTextBox
             // 
@@ -181,7 +184,7 @@
             this.Controls.Add(this.InteresesMensualButton);
             this.Controls.Add(this.CantidadDepositadaTextBox);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.MesesListBox);
+            this.Controls.Add(this.Meses);
             this.Controls.Add(this.InteresMensualTextBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -189,6 +192,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,7 +207,7 @@
         private System.Windows.Forms.Button InteresesMensualButton;
         private System.Windows.Forms.TextBox CantidadDepositadaTextBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ListBox MesesListBox;
+        private System.Windows.Forms.ListBox Meses;
         private System.Windows.Forms.TextBox InteresMensualTextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

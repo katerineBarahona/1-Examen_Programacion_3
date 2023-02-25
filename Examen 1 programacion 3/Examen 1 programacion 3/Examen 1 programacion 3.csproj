@@ -60,6 +60,12 @@
     <Compile Include="Segundo Formulario.Designer.cs">
       <DependentUpon>Segundo Formulario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tercer Formulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tercer Formulario.Designer.cs">
+      <DependentUpon>Tercer Formulario.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -72,6 +78,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Segundo Formulario.resx">
+      <DependentUpon>Segundo Formulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tercer Formulario.resx">
+      <DependentUpon>Tercer Formulario.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

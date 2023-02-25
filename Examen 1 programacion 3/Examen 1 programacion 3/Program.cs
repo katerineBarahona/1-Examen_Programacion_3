@@ -16,7 +16,7 @@ namespace Examen_1_programacion_3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new  Tercer_Formulario());
         }
     }
 }
